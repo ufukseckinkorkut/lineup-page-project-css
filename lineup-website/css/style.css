@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ /* html ana tag css kodları başlangıc */ 
+
+:root {
+  /* COLORS */
+  --BGCOLOR: #121212;
+  --FONTCOLOR: #eeeeee;
+  --HEADERCOLOR: #eeeeee;
+}
+
+body {
+  background-color: var(--BGCOLOR);
+}
+
+a {
+  text-decoration: none;
+  color: var(--FONTCOLOR);
+}
+
+/* html ana tag css kodları bitiş */ 
+
+.bigHeader {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  color: var(--HEADERCOLOR);
+  margin-top: -200px;
+  margin-left: 250px;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#mainContent {
+  margin-top: 50px;
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 150px;
+  justify-content: center;
+  margin-top: 250px;
+  margin-left: -50px;
+  row-gap: 50px;
+}
+
+.teamPatch {
+  padding: 2rem;
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 1rem;
+  object-fit: contain;
+
+}
+
+.barca {
+  background-color: #a50044;
+}
+
+.real {
+  background-color: #004798;
+}
+
+.fener {
+  background-color: #004482;
+}
+
+.galata {
+  background-color: #fd9b02;
+  margin-left: 170px;
+}
+
+.besik {
+  background-color: #e00707;
+  margin-left: 170px;
+}
+
+.seasons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 200px;
+  margin-right: 750px;
+}
+
+.seasonBox {
+  width: 450px;
+  height: 110px;
+  border-radius: 2rem;
+  border: 2px solid white;
+}
+
+.seasonNumbers {
+  display: inline-block;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  margin-left: 130px;
+  margin-top: 25px;
+  font-weight: bolder;
+
+}
+
+.boxNames {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  color: var(--FONTCOLOR);
+}
+
+.big-logo img {
+  width: 450px;
+  float: right;
+  margin-top: -370px;
+  margin-right: 250px;
+
+}
+
+.big-logo-real img {
+  width: 450px;
+  float: right;
+  margin-top: -500px;
+  margin-right: 250px;
+}
+
+.big-logo-besik img {
+  width: 450px;
+  float: right;
+  margin-top: -500px;
+  margin-right: 250px;
+}
+
+.teamHeader img {
+  position: absolute;
+  width: 100px;
+  float: right;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.homeButton img {
+  width: 70px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+tbody {
+  display: grid;
+  position: absolute;
+  border-collapse: collapse;
+  gap: 10px;
+  font-size: 30px;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+td {
+  color: var(--FONTCOLOR);
+  padding: 5px;
+}
+
+.profilePic {
+  width: 30px;
+  height: auto;
+}
+
+.lineUpPic {
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 1000px;
+}
+
+/* Responsiveness */
+
+/* Starting of the Main Page */
+@media screen and (max-width:985px) {
+  .teams {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 150px;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: -30px;
+    row-gap: 50px;
+  }
+
+  .teamPatch {
+    padding: 2rem;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 1rem;
+    object-fit: contain;
+
+  }
+}
+
+@media screen and (max-width:935px) {
+  .bigHeader {
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    color: var(--HEADERCOLOR);
+
+    margin-left: 100px;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .teams {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 150px;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: -30px;
+    row-gap: 50px;
+  }
+
+  .teamPatch {
+    padding: 2rem;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 1rem;
+    object-fit: contain;
+
+  }
+
+  .galata {
+    background-color: #fd9b02;
+
+  }
+
+  .besik {
+    background-color: #e00707;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .bigHeader {
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    color: var(--HEADERCOLOR);
+    margin-top: -100px;
+    margin-left: 100px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .teams {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 50px;
+    row-gap: 50px;
+  }
+
+  .teamPatch {
+    padding: 2rem;
+    width: 70px;
+    height: 70px;
+    border: 5px solid white;
+    border-radius: 1rem;
+    object-fit: contain;
+
+  }
+
+  .galata {
+    background-color: #fd9b02;
+    margin-left: 0px;
+  }
+
+  .besik {
+    background-color: #e00707;
+    margin-left: 0px;
+  }
+}
+
+/* Ending of the Main Page */
+
+/* Starting of the Season Selection Pages */
+@media screen and (max-width:1300px) {
+  .seasonBox {
+    width: 350px;
+    height: 90px;
+    border-radius: 2rem;
+    border: 2px solid white;
+  }
+
+  .seasonNumbers {
+    display: inline-block;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-weight: bolder;
+
+  }
+
+  .boxNames {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--FONTCOLOR);
+  }
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 450px;
+    float: right;
+    margin-top: -370px;
+    margin-right: 10px;
+
+  }
+
+}
+
+@media screen and (max-width:1103px) {
+  .seasonBox {
+    width: 350px;
+    height: 90px;
+    border-radius: 2rem;
+    border: 2px solid white;
+    margin-left: 250px;
+  }
+
+  .seasonNumbers {
+    display: inline-block;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-weight: bolder;
+
+  }
+
+  .boxNames {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--FONTCOLOR);
+  }
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 350px;
+    float: right;
+    margin-top: -300px;
+    margin-right: 50px;
+
+  }
+
+}
+
+@media screen and (max-width:855px) {
+  .seasonBox {
+    width: 250px;
+    height: 80px;
+    border-radius: 2rem;
+    border: 2px solid white;
+    margin-left: 500px;
+  }
+
+  .seasonNumbers {
+    display: inline-block;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-weight: bolder;
+
+  }
+
+  .boxNames {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--FONTCOLOR);
+  }
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 150px;
+    float: right;
+    margin-top: -180px;
+    margin-right: 130px;
+
+  }
+
+}
+
+@media screen and (max-width:647px) {
+  .seasonBox {
+    width: 200px;
+    height: 70px;
+    border-radius: 2rem;
+    border: 2px solid white;
+    margin-left: 500px;
+  }
+
+  .seasonNumbers {
+    display: inline-block;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bolder;
+
+  }
+
+  .boxNames {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--FONTCOLOR);
+  }
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 150px;
+    float: right;
+    margin-top: -180px;
+    margin-right: 100px;
+
+  }
+
+}
+
+@media screen and (max-width:587px) {
+  .seasonBox {
+    width: 200px;
+    height: 70px;
+    border-radius: 2rem;
+    border: 2px solid white;
+    margin-left: 580px;
+    margin-top: 50px;
+  }
+
+  .seasonNumbers {
+    display: inline-block;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bolder;
+
+  }
+
+  .boxNames {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: var(--FONTCOLOR);
+  }
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 150px;
+    float: right;
+    margin-top: -450px;
+    margin-right: 200px;
+
+  }
+
+}
+
+@media screen and (max-width:569px) {
+
+  .big-logo img,
+  .big-logo-real img {
+    width: 150px;
+    float: right;
+    margin-top: -450px;
+    margin-right: 190px;
+
+  }
+}
+
+@media screen and (max-width:519px) {
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 150px;
+    float: right;
+    margin-top: -450px;
+    margin-right: 190px;
+
+  }
+
+  .seasonBox {
+    width: 200px;
+    height: 70px;
+    border-radius: 2rem;
+    border: 2px solid white;
+    margin-left: 500px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:467px) {
+
+  .big-logo img,
+  .big-logo-besik img,
+  .big-logo-real img {
+    width: 100px;
+    float: right;
+    margin-top: -560px;
+    margin-right: 50px;
+
+  }
+
+  .seasonBox {
+    width: 200px;
+    height: 70px;
+    border-radius: 2rem;
+    border: 2px solid white;
+    margin-left: 400px;
+    margin-top: 50px;
+  }
+}
+
+/* Ending of the Season Selection Pages */
+
+/* Starting of the Lineup Pages */
+@media screen and (max-width:1845px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 700px;
+  }
+
+}
+
+@media screen and (max-width:1546px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 500px;
+  }
+
+}
+
+@media screen and (max-width:1344px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 500px;
+  }
+
+  .lineUpPic img {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 500px;
+  }
+
+  .lineUpPic img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 500px;
+  }
+
+  .lineUpPic img {
+    width: 400px;
+  }
+
+  tbody {
+    display: grid;
+    position: absolute;
+    border-collapse: collapse;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 500px;
+  }
+
+  .lineUpPic img {
+    width: 300px;
+  }
+
+  tbody {
+    display: grid;
+    position: absolute;
+    border-collapse: collapse;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 300px;
+  }
+
+  .lineUpPic img {
+    width: 300px;
+  }
+
+  tbody {
+    display: grid;
+    position: absolute;
+    border-collapse: collapse;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .lineUpPic {
+    position: absolute;
+    margin-top: 730px;
+    margin-left: 50px;
+  }
+
+  .lineUpPic img {
+    width: 300px;
+  }
+
+  tbody {
+    display: grid;
+    position: absolute;
+    border-collapse: collapse;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
+
+/* Ending of the Lineup Pages */
